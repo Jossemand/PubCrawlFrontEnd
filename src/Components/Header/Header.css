@@ -1,0 +1,16 @@
+.beer-logo {
+  padding-left: 15px;
+  width: 200px;
+  height: 200px;
+  animation: rotation 6s infinite linear;
+  object-fit: contain;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
