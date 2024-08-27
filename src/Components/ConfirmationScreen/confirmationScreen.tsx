@@ -1,4 +1,3 @@
-import NavigationBar from "../../NavigationBar";
 import Header from "../Header/Header";
 
 function ConfirmationScreen() {
@@ -7,7 +6,6 @@ function ConfirmationScreen() {
       <Header />
 
       <h1>Cofirmation Screen</h1>
-      <NavigationBar />
     </div>
   );
 }

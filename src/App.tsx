@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Header />
-      <NavigationBar />
       <main>
         <HomeScreen />
       </main>

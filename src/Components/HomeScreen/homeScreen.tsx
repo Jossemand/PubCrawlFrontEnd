@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import "./homeScreen.css";
 function HomeScreen() {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div>
       <h1>Home Screen</h1>
-      <button className="Login-button">
-        {" "}
-        <Link to="/login">Login</Link>{" "}
+      <button className="Login-button" onClick={handleLoginClick}>
+        Login
       </button>
     </div>
   );

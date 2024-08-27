@@ -12,10 +12,10 @@ nav ul {
 nav li {
   display: flex;
   background-color: var(--background-color-secondary);
-  border-radius: 50%;
 }
 nav .past .bubble {
   background-color: green;
+  border-radius: 50%;
 }
 nav ul div {
   width: 4em;
