@@ -14,12 +14,12 @@
 
   --color-button: #cac4ce;
   --color-button-secondary: #9b90a2;
-  --color-button-tertiary: #c59966;
+  --color-button-tertiary: #000000;
   --color-button-quaternary: #26283258;
   --color-button-delete: #ff5137;
 
   --color-text: #000000;
-  --color-text-secondary: #b3b3b3;
+  --color-text-secondary: #000000;
   --color-text-tertiary: #b71901;
   --color-text-inverse: #ffffff;
   --color-nav-shadow: rgba(255, 255, 255, 0);

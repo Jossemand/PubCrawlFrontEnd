@@ -4,7 +4,7 @@
 }
 
 .continue-button {
-  width: 100%;
+  width: 200px;
   height: 100%;
   padding: 10px 20px;
   border: 1px solid black;
@@ -12,8 +12,9 @@
   color: black;
   cursor: pointer;
   justify-content: center;
+  align-items: center;
 }
 
 .continue-button:hover {
-  background-color: #dff9de;
+  background-color: #c6ffc6;
 }

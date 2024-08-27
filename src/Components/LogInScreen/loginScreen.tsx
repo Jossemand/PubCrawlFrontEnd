@@ -59,22 +59,29 @@ function loginScreen() {
   if (loginSuccess) {
     return (
       <div>
-        <Header />
         <h1>Hej {userName}</h1>
-        <button
-          className="continue-button"
-          onClick={() => navigate("/questions")}
-        >
-          Fortsæt til spørgsmål
-        </button>
+        <div className="informaton-message">
+          <p>
+            Du vises nu en række spørgsmål. Du bedes svare ærligt, ellers er du
+            et dræn. Dine svar sendes til den angivne mail ({email}), når alle
+            spørgsmål er besvaret. Denne mail fungerer både som bekræftelse på,
+            at svarene er modtaget korrekt og så du kan huske dine svar til
+            selve pub crawlen.
+          </p>
+
+          <button
+            className="continue-button"
+            onClick={() => navigate("/questions")}
+          >
+            Fortsæt til spørgsmål
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
     <div>
-      <Header />
-
       <div className="login-input">
         <label className="login-box">Email</label>
         <input

@@ -1,14 +1,14 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import HomeScreen from "./Components/HomeScreen/homeScreen";
-import NavigationBar from "./NavigationBar";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <HomeScreen />
+        <Outlet /> {/* Renders the child route component */}
       </main>
     </>
   );
