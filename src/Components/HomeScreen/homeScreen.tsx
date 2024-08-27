@@ -10,7 +10,7 @@ function HomeScreen() {
   return (
     <div>
       <h1>Home Screen</h1>
-      <button className="Login-button" onClick={handleLoginClick}>
+      <button className="continue-button" onClick={handleLoginClick}>
         Login
       </button>
     </div>

@@ -1,16 +1,16 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--color-primary);
+  color: var(--color-text);
   background-color: var(--background-color-primary);
 
-  --background-color-primary: #f3f4f6;
+  --background-color-primary: #ffffff;
   --background-color-secondary: #d0d4dc;
   --color-primary: #d4995e;
-  --color-secondary: #343a40;
+  --color-secondary: #000000;
 
   --color-button: #cac4ce;
   --color-button-secondary: #9b90a2;
@@ -19,7 +19,7 @@
   --color-button-delete: #ff5137;
 
   --color-text: #000000;
-  --color-text-secondary: #49414e;
+  --color-text-secondary: #b3b3b3;
   --color-text-tertiary: #b71901;
   --color-text-inverse: #ffffff;
   --color-nav-shadow: rgba(255, 255, 255, 0);
