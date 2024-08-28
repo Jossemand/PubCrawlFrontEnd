@@ -71,7 +71,7 @@ function loginScreen() {
 
           <button
             className="continue-button"
-            onClick={() => navigate("/questions")}
+            onClick={() => navigate("/questions/1")}
           >
             Fortsæt til spørgsmål
           </button>

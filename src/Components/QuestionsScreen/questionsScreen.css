@@ -5,6 +5,8 @@
 .content {
   flex: 1;
   padding: 20px;
+  width: 500px;
+  height: 50rem;
 }
 
 .answers {
@@ -73,4 +75,9 @@
 
 .question-text {
   font-size: 1.2em;
+}
+
+.nav-box.disabled {
+  cursor: not-allowed;
+  color: #aaa;
 }

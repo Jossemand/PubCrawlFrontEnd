@@ -1,0 +1,10 @@
+.drawing-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000; /* Optional: border to show canvas edges */
+}
+
+canvas {
+  border: 1px solid #000; /* Optional: border to show canvas edges */
+}
