@@ -1,15 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../Header/Header";
 import "./loginScreen.css";
 import { useState } from "react";
+import { useUserContext } from "../../contexts/userContext";
 
 function loginScreen() {
   const navigate = useNavigate();
+  const { userName, setUserName } = useUserContext();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginSuccess, setLoginSuccess] = useState(false);
-  const [userName, setUserName] = useState("");
+  const [animate, setAnimate] = useState(false);
 
   const handleLoginClick = () => {
     if (!email || !password) {
@@ -56,10 +57,20 @@ function loginScreen() {
     }
   };
 
+  const handleContinueClick = () => {
+    setAnimate(true);
+    setTimeout(() => {
+      navigate("/questions/1");
+    }, 1000);
+  };
+
   if (loginSuccess) {
     return (
       <div>
-        <h1>Hej {userName}</h1>
+        <h1>
+          Hej
+          <div className={animate ? "animate-username" : ""}>{userName}</div>
+        </h1>
         <div className="informaton-message">
           <p>
             Du vises nu en række spørgsmål. Du bedes svare ærligt, ellers er du
@@ -69,10 +80,7 @@ function loginScreen() {
             selve pub crawlen.
           </p>
 
-          <button
-            className="continue-button"
-            onClick={() => navigate("/questions/1")}
-          >
+          <button className="continue-button" onClick={handleContinueClick}>
             Fortsæt til spørgsmål
           </button>
         </div>

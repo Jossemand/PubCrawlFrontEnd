@@ -1,7 +1,8 @@
 import { useNavigate, useParams, Link, Outlet } from "react-router-dom";
 import "./questionsScreen.css";
 import DrawingCanvas from "../DrawingCanvas/drawingCanvas";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useUserContext } from "../../contexts/userContext";
 
 const questions = [
   {
@@ -76,6 +77,13 @@ function QuestionsScreen() {
   const questionIndex = parseInt(questionNumber ?? "1", 10) - 1;
   const currentQuestion = questions[questionIndex];
 
+  const { userName } = useUserContext();
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
   const [answeredQuestions, setAnsweredQuestions] = useState<boolean[]>(
     Array(questions.length).fill(false)
   );
@@ -113,6 +121,9 @@ function QuestionsScreen() {
 
   return (
     <div className="question-screen">
+      <div className="header">
+        <h2> {userName}</h2>
+      </div>
       <div className="content">
         <h1>Spørgsmål {questionIndex + 1}</h1>
         <p className="question-text">{currentQuestion.text}</p>

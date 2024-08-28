@@ -22,3 +22,19 @@
   width: 50%;
   display: inline-block;
 }
+
+@keyframes fly-to-top-left {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-728px, -393px); /* Adjust as needed */
+    opacity: 1;
+    font-size: 28px;
+  }
+}
+
+.animate-username {
+  animation: fly-to-top-left 1s forwards;
+}
